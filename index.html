@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>Weather Anytime | Ashok Dey</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700,800" rel="stylesheet">  
+  	<link rel="icon" href="favicon.ico">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+	<div id="search">
+	<h1>Weather Anytime </h1><br>
+		<p class="help">Enter your <span id="help"></span> and hit ENTER!</p>
+		<img src="images/loader.gif" alt="loading" id = "img-tag">
+		<p class="hint">
+			(Allow location access and get weather of your location without typing)
+		</p>	
+		<input type="text" id="input-box" autofocus>
+		<a href="#" id="search-btn" type="submit">GO</a>
+	</div>
+	<div id="load">
+	<div id="weather-box">
+		<h3 id="city-name">City name</h3>
+        <div id="realTemp">Temperature</div>
+        <div id="feelsLike">Temperature</div>
+		<div id="humidity">Humidity</div>
+		<div id="windSpeed">Humidity</div>
+		<div id="summary">Weather Description</div>
+	</div>
+	<br>
+	<footer>
+		<a href="https://darksky.net/poweredby/">Powered by Dark Sky </a> | &copy; <span class="copy"></span> geekymano
+	</footer>
+	<script src="js/app.js"></script>
+	<script src="js/typed.js"></script>
+	<script>
+		$(function(){
+			$("#help").typed({
+				strings: ['CITY,', 'or ADDRESS',  'or ZIP CODE'],
+				typeSpeed: 50,
+				loop : true
+			});
+		});
+		var date = new Date;
+		document.querySelector('.copy').innerHTML = date.getFullYear();
+	</script>
+</body>
+</html>
