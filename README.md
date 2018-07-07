@@ -5,3 +5,5 @@
 
 ### Sample-Image
 ![Homepage](Snapshots/SnapshotOne.png)
+
+<p align="center"><b>Created by geekymano</b></p>
