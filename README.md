@@ -1,4 +1,7 @@
 # Weather-App
 
 ### Live-Preview
-[Click Here](https://amanovishnu.github.io/Weather-App/index.html)
+[Click Here to View Live Preview](https://amanovishnu.github.io/Weather-App/index.html)
+
+### Sample-Image
+![Homepage](Snapshots/SnapshotOne.png)
